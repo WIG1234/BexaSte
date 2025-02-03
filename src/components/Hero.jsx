@@ -1,36 +1,38 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
 
-const Hero = () => {
-  const textVariants = {
-    hidden: { opacity: 0, x: -100 }, // Start with opacity 0 and move to the left
-    visible: { opacity: 1, x: 0 },  // Fade in and move to normal position
-  };
-
+const IntroductionSection = () => {
   return (
-    <section className="text-center w-full bg-blue-500 text-white py-20 bg-[url('/footer.jpg')] bg-cover bg-center">
-      <motion.h2
-        className="text-4xl font-bold mb-4"
-        variants={textVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.3 }} // Repeats animation when re-entering the viewport
-        transition={{ duration: 0.8, ease: 'easeInOut' }}
-      >
-        la sécurité de vos véhicules commence ici
-              </motion.h2>
-      <motion.p
-        className="text-lg mb-8"
-        variants={textVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.3 }}
-        transition={{ duration: 0.8, delay: 0.2, ease: 'easeInOut' }} // Adds a delay for a staggered effect
-      >
-      </motion.p>
-      <button className="bg-white text-blue-500 px-6 py-3 rounded">Voir nos offres.</button>
+    <section className="flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 py-10  ">
+      {/* Left Side: Text */}
+      <div className="w-full lg:w-1/2 text-center lg:text-left flex-grow mb-7">
+      <h2 className="text-3xl lg:text-4xl font-bold text-whte-700 mb-4">
+          Bienvenue chez BEXA
+        </h2>
+        <p className="text-lg text-whte-700 leading-relaxed">
+          Chez <strong>BEXA</strong> nous sommes spécialisés dans l’expertise et le conseil automobile, en proposant des services professionnels conformes aux plus hauts standards du secteur. Dirigée par un ingénieur expérimenté en automobile et en CAO 3D, notre équipe est composée de 13 experts qualifiés, dont certains cumulent plusieurs décennies d’expérience.
+
+          <br/> Nos valeurs fondamentales reposent sur la satisfaction client, la réactivité et l’adaptabilité, garantissant des solutions personnalisées pour chaque besoin. Que ce soit pour l’évaluation des dommages, l’estimation de la valeur des véhicules, la gestion des sinistres ou les audits techniques, BEXA met à votre disposition une expertise de pointe, appuyée par des technologies modernes et une parfaite maîtrise des réglementations du secteur.
+
+          <br/>Avec un engagement fort envers la transparence, la précision et l’efficacité, nous accompagnons nos clients avec professionnalisme et rigueur pour des solutions adaptées et fiables.
+
+
+        </p>
+        <p className="text-lg text-whte-700 mt-4">
+          🚗 <strong>Découvrez nos services et profitez de l’excellence avec
+          BEXA !</strong>
+        </p>
+      </div>
+
+      {/* Right Side: Image (Hidden on Mobile) */}
+      <div className="hidden lg:flex w-1/2 justify-center">
+        <img
+          src="pexels-nikitaxnikitin-10102313.jpg" // Replace with actual image URL
+          alt="BEXA Expertise Automobile"
+          className="rounded-md w-[20rem] object-cover"
+        />
+      </div>
     </section>
   );
 };
 
-export default Hero;
+export default IntroductionSection;

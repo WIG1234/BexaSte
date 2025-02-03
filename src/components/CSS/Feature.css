@@ -19,13 +19,7 @@
     transition: all 0.3s ease-in-out;
   }
 
-  p {
-    max-height: 40px; /* Show only the first line initially */
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    transition: max-height 0.3s ease-in-out;
-  }
+  
   
   #cell:hover p {
     max-height: 200px; /* Expand to show full text */

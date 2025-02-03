@@ -26,7 +26,7 @@ const FeatureCard = ({ question, answer }) => {
           isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <p className="mt-3 text-gray-600 p-2">{answer}</p>
+        <p className="mt-3 text-gray-600 p-2 text-start ">{answer}</p>
       </div>
     </div>
   );
