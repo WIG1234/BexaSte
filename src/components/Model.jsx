@@ -18,7 +18,7 @@ function Asset() {
 
 export default function Model() {
   return (
-    <div className="w-screen h-screen relative">
+    <div className="w-full h-screen relative">
       <Canvas camera={{ position: [0, 2, 5], fov: 50 }}>
         <ambientLight intensity={0.5} />
         <directionalLight position={[2, 5, 3]} intensity={1} />
