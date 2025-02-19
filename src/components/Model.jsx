@@ -4,7 +4,7 @@ import { useRef } from "react";
 import "./CSS/car.css";
 
 function Asset() {
-  const { scene } = useGLTF("tesla.glb");
+  const { scene } = useGLTF("teslacrash.glb");
   const modelRef = useRef();
 
   useFrame(() => {
