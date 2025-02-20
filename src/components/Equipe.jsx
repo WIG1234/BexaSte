@@ -10,14 +10,14 @@ const Equipe = () => {
   };
 
   return (
-    <div className="w-full bg-gray-100">
-      <section id="features" className="py-12 bg-gray-100 w-4/5 mx-auto">
+    <div className="w-full bg-black">
+      <section id="features" className="py-12 bg-black w-4/5 mx-auto">
         <h3 className="text-3xl text-center font-semibold mb-6 text-black">Equipe</h3>
         <div className="flex flex-col md:flex-row md:flex-wrap gap-6 justify-center">
           {equipe.map((membre, index) => (
             <motion.div
               key={membre.id}
-              className="bg-white p-6 shadow rounded-lg text-black w-full sm:w-72 flex flex-col items-center"
+              className="blue p-6 shadow rounded-lg text-black w-full sm:w-72 flex flex-col items-center"
               variants={cardVariants}
               initial="hidden"
               whileInView="visible"

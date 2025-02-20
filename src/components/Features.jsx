@@ -1,6 +1,6 @@
 import React from 'react';
 import partenaires from '../assets/Partenaires';
-import './CSS/Feature.css'; // Import CSS file for styles
+import '../styles/Feature.css'; // Import CSS file for styles
 
 const Features = () => (
   <section id="features" className="py-12 bg-gray-100 overflow-hidden z-0">

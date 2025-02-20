@@ -1,8 +1,8 @@
 import React from "react";
-
+import '../App.css'
 const IntroductionSection = () => {
   return (
-    <section className="flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 py-10  ">
+    <section className="blue mt-4 rounded-xl text-black flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 py-10  ">
       {/* Left Side: Text */}
       <div className="w-full lg:w-1/2 text-center lg:text-left flex-grow mb-7">
       <h2 className="text-3xl lg:text-4xl font-bold text-whte-700 mb-4">
@@ -26,7 +26,7 @@ const IntroductionSection = () => {
       {/* Right Side: Image (Hidden on Mobile) */}
       <div className="hidden lg:flex w-1/2 justify-center">
         <img
-          src="pexels-nikitaxnikitin-10102313.jpg" // Replace with actual image URL
+          src="car.jpg" // Replace with actual image URL
           alt="BEXA Expertise Automobile"
           className="rounded-md w-[20rem] object-cover"
         />

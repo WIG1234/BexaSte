@@ -3,7 +3,7 @@ import { Canvas, useLoader, useFrame } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import * as THREE from 'three';
 import { useState } from 'react';
-import "./CSS/car.css";
+import "../styles/car.css";
 
 // Vertex Shader
 const vertexShader = `

@@ -5,7 +5,7 @@ const equipe = [
     { id: 4, name: "KHARMAJ Lahcen ",  description: "Agent de terrain" ,Facebook:"",twitter:"",instagram:""},
     { id: 5, name: "CHAHIDI Youssef",  description: " Agent de terrain" },
     { id: 6, name: "GHAICHAT Hamza",  description: " Agent de terrain",Facebook:"",twitter:"",instagram:""},
-    { id: 7, name: " SOUSSI Sohaib", description: "  Responsable informatique",Facebook:"",twitter:"",instagram:"https://www.instagram.com/karim.coach.fedesurf.judge/" },
+    { id: 7, name: "SOUSSI Sohaib", description: "  Responsable informatique",Facebook:"",twitter:"",instagram:"https://www.instagram.com/karim.coach.fedesurf.judge/" },
 // Add more members as needed
   ];
   export default equipe;
