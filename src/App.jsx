@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false); // Set loading to false after 10 seconds
-    }, 10000); // 10 seconds
+    }, 5000); // 10 seconds
 
     return () => clearTimeout(timer); // Clear the timer when the component is unmounted
   }, []);
@@ -62,14 +62,13 @@ function App() {
           <section id="services">
             <Services />
           </section>
-          <ContactUs /> {/* Add ContactUs section here */}
           <Footer />
           
           {/* Bottom-left button */}
           <div className="fixed bottom-4 right-4">
             <button 
               className="bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg"
-              onClick={() => window.open('https://wa.me/212641437338', '_blank')}
+              onClick={() => window.open('https://wa.me/212684444422', '_blank')}
             >
               <FaWhatsapp />
             </button>
