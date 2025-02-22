@@ -1,0 +1,39 @@
+.conveyor {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .belt {
+    display: inline-flex;
+    animation: conveyor 20s linear infinite;
+    /* Width is double to ensure seamless looping without gaps */
+    width: calc(200% + 20px); /* Adjust based on the actual gap between items */
+  }
+  
+  #cell {
+    width: 200px; /* Adjust width as needed */
+    margin: 0 10px;
+    text-align: center;
+    padding-bottom: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  
+  
+  #cell:hover p {
+    max-height: 200px; /* Expand to show full text */
+    white-space: normal;
+  }
+  
+  
+  /* Conveyor belt animation */
+  @keyframes conveyor {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
