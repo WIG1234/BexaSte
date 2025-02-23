@@ -9,6 +9,7 @@ import Model from './components/Model';
 import ContactUs from './components/ContactUs';
 import { FaWhatsapp } from "react-icons/fa";
 import "./App.css";
+import VideoPlayer from './components/VideoPlayer';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -36,9 +37,10 @@ function App() {
             <p className="text-base sm:text-lg w-full sm:w-[30rem] mb-4">
               Des services d'expertise et de conseil automobile de haute qualité. Faites confiance à notre équipe expérimentée pour un service rapide, efficace et adapté à vos besoins.
             </p>
-            <button className="bg-transparent border-2 border-white text-white px-4 py-2 sm:px-6 sm:py-3 rounded-md hover:bg-white hover:text-black transition">
+            <button className="bg-transparent border-2 border-white text-white mb-4 px-4 py-2 sm:px-6 sm:py-3 rounded-md hover:bg-white hover:text-black transition">
               Contactez-nous
             </button>
+            <VideoPlayer/>
             <Model />
           </section>
 
